@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+        .borda {
+            border-width: 5px;
+            border-color: red green;
+            border-bottom-color: yellow;
+            border-radius: 5px;
+            /* Caso não coloque o estilo padrão sera o 'none'. */
+        }
+
+        .dotted { border-style: dotted; }
+
+        .dashed { border-style: dashed; }
+
+        .solid { border-style: solid; }
+
+        .none { border-style: none; } /* O 'none' é como se o elemento nunca estive-se entrado na tela. */
+
+        .hidden { border-style: hidden; } /* O 'hidden' é como se o elemento estive-se na tela mas não aparecendo. */
+    </style>
+</head>
+<body>
+    <div class="borda">
+        Conteúdo
+    </div>
+
+    <div class="borda dotted">
+        Conteúdo
+    </div>
+    <div class="borda dashed">
+        Conteúdo
+    </div>
+    <div class="borda solid">
+        Conteúdo
+    </div>
+    <div class="borda none">
+        Conteúdo
+    </div>
+    <div class="borda hidden">
+        Conteúdo
+    </div>
+</body>
+</html>
