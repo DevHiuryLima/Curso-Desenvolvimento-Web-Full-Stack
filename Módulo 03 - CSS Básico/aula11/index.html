@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidades de medida - Fixas</title>
+    <title>Unidades de medida - referência</title>
     <style>
         .container {
             font-size: 25px;
@@ -16,6 +16,21 @@
             width: 300px;
             background: blue;
         }
+
+        /*
+            Medidas relativas:
+            'em'    Faz referência ao tamanho atual da fonte daquele elemento. Relativo ao 'm' maiusculo de uma determinada fonte. PS: 16px geralmente é igual a 1em.
+            'ex'    Relativo a altura x. Ou seja a altura da letra 'x' de uma determinada fonte.
+            'rem'   Faz referência ao tamanho da fonte do elemento raiz. A fonte configurada no body
+            'vw'    Faz referência a largura da janela (view port). '1vw' vai ser igual a 1%.
+            'vh'    Faz referência a altura da janela (view port). '1vw' vai ser igual a 1%.
+            'vmin'  Faz referência a menor dimensão.
+            'vmax'  Ao contrario do 'vmin'.
+            '%'     O tamanho vai ser referênte ao tamanho do elemento pai. No caso da classe 'container' o pai seria o 'body'.
+
+
+            OBS: A recomendação da W3School é usar em sites o 'px' ou 'em'.
+        */
     </style>
 </head>
 <body>
