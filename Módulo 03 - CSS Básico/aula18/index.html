@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ul { list-style-type: circle; }
+        /* Tipos de 'list-style-type' para 'ul' é o disc, circle, square */
+
+        ol { list-style-type: decimal; }
+        /* 
+            Tipos de 'list-style-type' para 'ol':
+            1 - números representado como: decimal
+            A - letras maiúscula representado como: upper-alpha
+            a - letras minusculas representado como: lower-alpha
+            I - números romanos em maiúscula representado como: upper-roman.
+            i - números romanos e minuscula representado como: lower-roman.
+        
+        */
+
+        .correct { list-style-image: url("assets/item.svg"); }
+
+        .inside > li { list-style-position: inside; border: 1px solid; }
+         
+        .outSide > li { list-style-position: outside; border: 1px solid; }
+    </style>
+</head>
+<body>
+    <h2>Lista ordenada</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <h2>Lista desordenada</h2>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <h2>Lista com imagem</h2>
+    <ul class="correct">
+        <li>item 1 <!-- A parti do html5 não é necessário utlizar uma tag de fechamento. -->
+        <li>item 2
+        <li>item 3
+    </ul>
+
+    <h2>Lista com o position editado</h2>
+    <ol class="inside">
+        <li>item 1
+        <li>item 2
+        <li>item 3
+    </ol>
+
+    <ul class="outSide">
+        <li>item 1
+        <li>item 2
+        <li>item 3
+    </ul>
+</body>
+</html>
