@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* 
+            Tipos de display: 
+
+            none - Deixa como se o elemento nunca estive-se colocado na tela.
+
+            block - É um bloco que vai do inicio até o fim da pagina. E o proximo conteudo vai começar na proxima linha. OBS:  Consigo colocar uma largura especifica.
+
+            inline - É um bloco que o proximo conteudo vai começar na proxima linha. OBS: nao é possível modificar a largura.
+
+            inline-block - Mantem o comportamento do display 'inline' mas permite alterar a altura e largura.
+
+            PS:Nuca pode se utilizar um elemento do tipo 'block' dentro de um parágrafo 'p'.
+            Nem um parágrafo dentro de um parágrafo.
+        */
+
+        body {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: blue;">
+        <div>Está é uma DIV normal</div>
+        <div>E aqui a história <div style="background-color: red; width: 400px;" >DIV de dentro</div> continua</div> <!-- O display block da 'div' permite mudar a largura da DIV de dentro. -->
+    </div>
+
+    <div>
+        <p>Este é um parágrafo normal</p>
+        <p>E aqui a história continua</p>
+    </div>
+
+    <p>
+        Aqui eu tenho o inicio de um parágrafo <span style="display: inline-block; width: 500px; height: 30px; background-color: blue;"> um SPAN no meio</span> E o fim do parágrafo.
+    </p> <!-- O display inline-block do 'span' permite mudar a largura. -->
+
+    <p>
+        Aqui eu tenho o inicio de um parágrafo <div> uma DIV no meio</div> E o fim do parágrafo.
+    </p>
+
+    <p>
+        Aqui eu tehno o inicio de um parágrafo <img src="assets/foto-p.png" style="display: none;"> E o fim do parágrafo.
+    </p> <!-- O display como none deixa como se o elemento nunca estive-se colocado na tela. -->
+</body>
+</html>
