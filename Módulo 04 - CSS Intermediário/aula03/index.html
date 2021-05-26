@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+
+        #container {
+            color: yellow;
+            background-color: blue;
+            width: 300px;
+            height: 100px;
+
+            overflow: auto;
+
+            /*
+                TIPOS DE VALORES:
+                O valor 'visible' deixa aparecer tudo que estiver saindo da 'div'.
+                O valor 'hidden' esconde as partes que estiver saindo da 'div'.
+                O valor 'scroll' cria uma barra de rolagem do lado e embaixo.
+                O valor do overflow como 'auto' (creio eu que siginifica automatico) ele ajusta e coloca uma barra de rolagem só onde precisa.
+
+                E posso escolher onde precisa da barra de rolagem
+                ex: overflow-y: scroll; colocando a barra na vertical (no y) ou overflow-x: scroll; colocando a barra na vertical (no x).
+
+                Pode ser feito o mesmo trocando o conteudo por uma imagem.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+    </div>
+</body>
+</html>
