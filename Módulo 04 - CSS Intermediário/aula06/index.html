@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        body { font-size: 1.2em; }
+
+        .img1 {
+            width: 100px;
+            float: left; /* Isso diz que a imagem vai ficar flutuando do lado esquerdo ou direito do proximo elemento. */
+        }
+
+        .img2 {
+            width: 100px;
+            float: right;
+        }
+
+        div {
+            border: 1px solid black;
+            overflow: auto;
+            background-color: #b2c3a6;
+        }
+
+        /* 
+            O 'float' é uma propiedade do display que permite que um elemento fique flutuando do lado de outro elemento.
+
+            a propiedade 'clear' tem como valor o left, right e both. Onde vai limpar qualque elemento do lado esquerdo direito ou ambos. O normal é o valor 'none' indicando que não tem 'clear'
+        */
+    </style>
+</head>
+<body>
+    <img src="assets/foto-p.png" class="img1"/>
+    <img src="assets/foto-p.png" class="img2"/>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime delectus id ab non assumenda, laudantium nesciunt impedit eum, quia sint possimus voluptatum fugiat nobis culpa optio vel. Ipsum, veniam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit consequuntur quae totam officiis enim molestias iure molestiae, voluptas recusandae odit doloremque in. Doloremque, rerum. Consequatur, neque. Quo rem cumque ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga consectetur repudiandae recusandae, voluptatibus quasi veniam perferendis unde quaerat! Nisi impedit illo placeat explicabo! Itaque, ducimus? Cumque ea similique quod. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officia deleniti sint impedit qui obcaecati, laborum fugit recusandae unde atque? Ducimus doloremque nemo veritatis ex, ab possimus ratione voluptates quae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis nam quas maxime error ipsa a. Fugiat aliquam, quibusdam, fuga atque incidunt similique repellat harum nulla accusamus molestias id dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolor eligendi! Magni nisi incidunt totam iusto assumenda necessitatibus quas odio quod quam fugiat! Laborum harum dolorum reiciendis magnam neque ea.
+    </p>
+
+    <div>
+        <img src="assets/foto-p.png" class="img1"/>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime delectus id ab non assumenda, laudantium nesciunt impedit eum, quia sint possimus voluptatum fugiat nobis culpa optio vel. Ipsum, veniam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit consequuntur quae totam officiis enim molestias iure molestiae, voluptas recusandae odit doloremque in. Doloremque, rerum. Consequatur, neque. Quo rem cumque ipsam!
+        </p>
+    </div>
+</body>
+</html>
