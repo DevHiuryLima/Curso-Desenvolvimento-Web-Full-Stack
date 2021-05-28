@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .retangulo {
+            width: 100px;
+            height: 500px;
+        }
+
+        .bg-red { background-color: red; }
+
+        .bg-blue { background-color: blue; }
+
+        .bg-green { background-color: green; }
+
+        .relative {
+            position: relative;
+            top: 40px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 20px;
+        }
+
+        /*
+            O display: inline; para as div não funcionaria, pois o 'inline' não aceita 'width' e 'height'.
+
+            ---- static -----
+
+            O "static" segue o fluxo padrão de uma pagina (De cima para baixo) e o mesmo não aceita as propiedades right, top, left e bottom.
+
+            ---- relative -----
+            
+            O "relative" vai se posicionar do mesmo modo do static. Ou seja é relativo a posição original que ela (a div) ficaria se fosse 'static'. Porém ele pode receber outra propiedades, como: right, top, left e bottom.
+            e ela só é relativa a posição original que ela ficaria se se ela fosse static: NaN;
+
+
+            ---- fixed -----
+
+            O fixed é em relação a janela do navegador se eu colocar: 
+            position: fixed;
+            left: -20px;
+            pode ser que parte da 'div' fique para fora da tela do navegador.
+
+            e se mudar o left para right ela ira ficar do lado direito e assim também muda para
+            o bottom e top. Como ele é fixo em relação a janela todas as outras partes da pagina irá mudar para cima e para baixo (com o 'scroll') ao rolar a pgina, mas o que está com o position: fixed; não vai mudar.
+
+            ---- absolute -----
+
+            O 'absolute' é em referência ao pai do nosso elemento
+            se não tiver pai, o pai sera o 'body'. O mesmo aceita as propiedades right, top, left e bottom. A mesma irá mudar a posição de acordo com o elemento pai.
+
+            A diferença entre o 'absolute' e 'relative'  é que o relative muda a partir do espaço que deveria estar e não em relação ao elemnto pai.
+
+            Se o pai do elemento colocado como 'absolute' não for do tipo 'static' funciona o 'position absolute'. Mas se for do tipo 'static' o elemento colocado como 'position absolute' muda para em relação ao pai do pai até encontrar um que não tenha o 'position static', caso não encontre irá usar como referência o 'body'.
+        */
+
+    </style>
+</head>
+<body>
+
+    <div class="quadrado bg-blue">
+
+    </div>
+    
+    <div class="quadrado bg-red">
+
+    </div>
+
+    <div class="retangulo bg-blue">
+        <div class="quadrado bg-red"></div>
+        <div class="relative quadrado bg-green"></div>
+    </div>
+</body>
+</html>
