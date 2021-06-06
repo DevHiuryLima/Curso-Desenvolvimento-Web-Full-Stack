@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        body { font-size: 1.2em; }
+
+        .card {
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        .card2 {
+            clear: left;
+            float: left;
+            border: 2px solid green;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .c1 { line-height: 200px; }
+
+        .c2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            /*
+                O valor de translete do 'y' começa de cima para baixo. Valor negativo vai para cima e valor positivo vai para baixo. E é 50% do inicio da parte azul até o fim dela.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            José da Silva
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            José da Silva
+        </div>
+    </div>
+
+    <div class="card2">
+        <div style="background-color: red;">
+            José da Silva
+        </div>
+    </div>
+</body>
+</html>

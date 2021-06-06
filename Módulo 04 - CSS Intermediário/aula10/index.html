@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body { margin: 0; padding: 0; }
+
+        .header {
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #5C57A4;
+            overflow: hidden;
+            font-size: 18px;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+
+        li {
+            float: left;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .logo { float: left; color: white; }
+        
+        @media screen and (max-width: 700px) { .header { background: gray; } }
+
+        @media screen and (max-width: 500px) {
+            .header { background: red; }
+
+            .logo { float: none; text-align: center; }
+
+            .menu { margin-top: 20px; float: none; text-align: center; }
+
+            li { float: none; margin-bottom: 5px; padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            Logo
+        </div>
+
+        <ul class="menu">
+            <li>Home
+            <li>Cursos
+            <li>Contato
+            <li>Escrtórios</li>
+        </ul>
+    </div>
+</body>
+</html>
