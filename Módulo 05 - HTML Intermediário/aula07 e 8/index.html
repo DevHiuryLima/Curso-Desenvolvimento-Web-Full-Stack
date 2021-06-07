@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Intro / Input HTML5</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <input type="color" name="cor">
+        <br><!-- Passa o hexadecimal da cor. -->
+
+        <input type="date" name="data" max="2100-01-01">
+        <br><!-- Seleciona uma data e a propiedade 'max' determina até onde o calendario vai. -->
+
+        <input type="datetime-local" name="dataehora" max="2100-01-01">
+        <br><!-- Seleciona uma data e a hora. -->
+
+        <input type="file" name="arquivo">
+        <br><!-- Envia um arquivo porém para isso o 'method' precisa ser 'POST' não funciona por 'GET'. -->
+
+        <input type="number" name="numerico" min="0" max="9">
+        <br><!-- Campo exclusivo para números. -->
+
+        <input type="range" name="intervalo" min="0" max="5" value="2">
+        <br/> <!-- O 'value' diz qual o valor inicial dele. -->
+
+        <input type="tel" name="telefone">
+        <br/> <!-- Não percebe diferença entre o 'tel' e o 'text' no computador, mas se for aberto no celular aparece só o teclado numerico. -->
+
+        <input type="email" name="email">
+        <br/> <!-- Verifica se está realmente enviando um email com o @ e o ponto. -->
+
+
+        <input type="submit">
+    </form>
+</body>
+</html>
